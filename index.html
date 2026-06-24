@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Satrio Adhy | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:#0f172a;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+.logo{
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+header{
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:white;
+    color:#2563eb;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    margin:5px;
+    font-weight:bold;
+}
+
+.btn-outline{
+    display:inline-block;
+    border:2px solid white;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    margin:5px;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.skills span{
+    background:#2563eb;
+    color:white;
+    padding:10px 20px;
+    border-radius:25px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    line-height:1.8;
+}
+
+ul{
+    margin-left:20px;
+    margin-top:10px;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:10px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<nav>
+    <div class="logo">MSA</div>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+
+<div class="hero">
+
+    <!-- GANTI FOTO INI -->
+    <img src="https://via.placeholder.com/200" alt="Profile">
+
+    <h1>Muhammad Satrio Adhy</h1>
+
+    <p>
+        Electrical Engineering Student • Robotics Enthusiast • Automation Engineer
+    </p>
+
+    <a href="#" class="btn">
+        Download CV
+    </a>
+
+    <a href="#contact" class="btn-outline">
+        Contact Me
+    </a>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about">
+
+<p>
+I am an Electrical Engineering student at Semarang State Polytechnic
+(Politeknik Negeri Semarang) with interests in Robotics, Embedded Systems,
+Automation, Mechatronics, and Technology Development.
+I possess leadership, teamwork, communication, and problem-solving skills
+gained through organizational activities, competitions, and engineering projects.
+I am passionate about learning new technologies and applying them to real-world problems.
+</p>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="card">
+
+<h3>Politeknik Negeri Semarang</h3>
+
+<p><b>2023 - Present</b></p>
+
+<p>Bachelor of Applied Science in Electronic Engineering Technology</p>
+
+<p>GPA : 3.42 / 4.00</p>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<h2>Organization Experience</h2>
+
+<div class="card">
+
+<h3>LPM Dimensi Polines</h3>
+
+<p><b>Head of Research Division</b></p>
+
+<p>May 2025 - Present</p>
+
+<ul>
+<li>Create infographic news content.</li>
+<li>Research myths and facts issues.</li>
+<li>Produce News Flash Time (NFT).</li>
+<li>Lead and manage research division activities.</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Majelis Permusyawaratan Kelas (MPK)</h3>
+
+<p><b>Public Relations Commission & Treasurer</b></p>
+
+<p>November 2020 - November 2022</p>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+<h3>Maze Solving Robot</h3>
+<p>
+Autonomous robot using ESP32, PID control, shortest path algorithm,
+and real-time navigation in a maze environment.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Smart Power Monitoring System</h3>
+<p>
+Electricity monitoring system using ESP32 and PZEM-004T
+to display voltage, current, power, and cost estimation.
+</p>
+</div>
+
+<div class="project-card">
+<h3>Obstacle Avoidance Robot</h3>
+<p>
+Robot utilizing ultrasonic sensors and autonomous movement
+for obstacle detection and avoidance.
+</p>
+</div>
+
+<div class="project-card">
+<h3>IoT Smart Socket</h3>
+<p>
+Smart socket capable of monitoring electrical parameters
+and controlling loads in real time.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<span>ESP32</span>
+<span>Arduino</span>
+<span>Raspberry Pi</span>
+<span>Python</span>
+<span>C/C++</span>
+<span>Embedded System</span>
+<span>Robotics</span>
+<span>Automation</span>
+<span>PLC</span>
+<span>Mechatronics</span>
+<span>Project Management</span>
+<span>Leadership</span>
+<span>Public Speaking</span>
+<span>Graphic Design</span>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Achievements & Certifications</h2>
+
+<div class="card">
+
+<ul>
+<li>🥈 Silver Medal IIIEX 2024</li>
+<li>Volunteer Ospek Kampus 2024</li>
+<li>Volunteer Pengabdian Masyarakat Elektro 2024</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact">
+
+<p>
+<i class="fas fa-envelope"></i>
+satrio.43423015@mhs.polines.ac.id
+</p>
+
+<p>
+<i class="fas fa-phone"></i>
+083163022820
+</p>
+
+<p>
+<i class="fas fa-location-dot"></i>
+Semarang, Central Java, Indonesia
+</p>
+
+<p>
+<i class="fab fa-github"></i>
+github.com/username
+</p>
+
+<p>
+<i class="fab fa-linkedin"></i>
+linkedin.com/in/username
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Muhammad Satrio Adhy | Portfolio Website
+</footer>
+
+</body>
+</html>
